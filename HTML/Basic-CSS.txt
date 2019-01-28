@@ -1,0 +1,82 @@
+What is CSS?
+	• CSS (Cascading Style Sheets)
+	• Selector{ property: value;}
+	• It always uses the most recent selector
+		○ It takes the last input it receives
+	• Most coders use separate style sheets
+		○ Easier to maintain
+		○ Concept: Separation of Concerns
+
+Good CSS Resource:
+	• Css-tricks.com
+	• Includes all the properties
+
+Linking an HTML Document to a CSS Style Sheet:
+	• <html>
+	  <head>
+	  	<title> My first Website!</title>
+	  	<link rel = "stylesheet" type="text/css" href"style.css">
+	  </head>
+
+
+Inline Styles (In an HTML Document):
+	• <header style="background-color: green;">
+
+Style Tags In HTML Documents:
+	• <style type="text/css">
+		li{background-color:grey;}
+	  </style>
+
+Display Listed Items In-line:
+	• li {
+		list-style: none;
+		display: inline-block;
+	}
+
+Class vs ID:
+	• You can apply a class to a bunch of elements to apply a style to
+	• You refer to them in CSS as .class{ }
+	• <p class="webtext">
+	• 
+
+ID's should only be referred to one time
+	• You apply a style to them in CSS as #id{ }
+	• <div id="div1">
+
+	
+
+Types of selectors:
+	• Element
+		○ Element is selected
+	• Element Element
+		○ Example div p
+		○ Selects all p elements inside div elements
+	• Element, Element
+		○ Example div, p
+		○ Selects all divs and all p elements
+	• Element > element
+		○ If an element is a child of an element, it is selected
+	• Element + Element
+		○ If an element comes directly after an element, it is selected
+	• Element:hover
+		○ Selected when mouse hovers over an element
+	• Element:last-child
+		○ Only the last child is selected
+	• Element:first-child
+		○ Only the first child is selected
+	• !important
+		○ Not recommended
+		○ It bypasses the cascading nature of CSS
+	• Great resource for specificity: https://specificity.keegan.st/
+
+Box Model: Common Sizing Technique
+	• Margin, Border, Padding Content
+
+Px vs Em vs Rem:
+	• PX stands for pixel size
+	• EM is the size compared to the containing element
+	• <p> <Span> </span> <p>
+	Span{ font-size=2em }
+	Font size will be twice as big as the P font size
+	• 1 Rem = default font size by browser (Typically, 1rem=16px)
+

@@ -1,0 +1,252 @@
+What is JavaScript?:
+	• JavaScript is a high-level programming language that all modern web browsers support.
+	• End of an expression: ;
+		○ Use a semicolon to end an expression
+
+Java Script has 7 Different Data Types:
+	• Data Types:
+		1. Undefined
+			i. Used when nothing is assigned to a variable
+		2. Null
+		3. Boolean
+			i. True or False, 1's or 0's
+		4. String
+			i. "String"
+			ii. If you want to print a special character like ' in a string, than you have to put a back slash before
+			Example, "Hi, That\'s really cool"
+		5. Symbol
+		6. Number
+			i. If you get NaN, then you entered "Not a Number"
+		7. Object
+
+JavaScript Variables:
+	• You store the data types in Variables
+		○ Ex) Var ourName
+	• JavaScript Variables are case sensitive
+		○ This is called Camel Case
+		○ It is common to do variables as: var thisIsHowYouNameVariables
+		○ Lowercase first word, upper for rest
+	• Variables Can't start with numbers
+		○ Similar to every other programming language
+		○ Can include with numbers
+	• Can't Start with a special symbol
+
+JavaScript Comparisons:
+	1. !==
+		○ 3 !== 3 will return False
+		○ Opposite of comparison operator
+	2. ===
+		○ 3 === 3 (3 equals 3, will return true)
+		○ This is the comparison operator, not just ==
+	3. >=
+		○ Greater than or equal to
+	4. <=
+	5. >
+	6. <
+
+Creating Our Own Functions:
+	• Function Declaration:
+	• Example: 
+	function functionName() {
+	  console.log("Hello World");
+	}
+	• Invoking the function: functionName();
+	• Passing Values to Functions:
+		function testFun(param1, param2) {
+		  console.log(param1, param2);
+		}
+
+		
+Indexing in Java Script 
+	• firstName[0] finds the first character of the variable firstName
+	• You cannot change index String values once created
+		○ Ex) myStr[0] = "J" is a no no
+	• Finding the last character in a string:
+		○ lastCharacter = string[string.length-1];
+	• Lets you acccess data within Arrays
+		○ var array = [50,60,70];
+		○ array[0]; // equals 50
+		○ var data = array[1]; // equals 60
+
+Java Script Array Variables:
+	• Ex) var sandwich = ["pb", "jelly", "bread];
+	• Can contain both strings and numbers in the same array
+	• Multidemsional Arrays:
+		○ Nest arrays within other arrays
+		○ var myArray = [["Bulls", 23], ["White Sox", 45]];
+	• Multidemensional Arrays Continued:
+		var arr = [
+		  [1,2,3],
+		  [4,5,6],
+		  [7,8,9],
+		  [[10,11,12], 13, 14]
+		];
+		arr[3]; // equals [[10,11,12], 13, 14]
+		arr[3][0]; // equals [10,11,12]
+		arr[3][0][1]; // equals 11
+	• Unlike strings, the entries of arrays are mutable and can be changed freely
+	• You can include functions in an array:
+		○ Var functionList = [ function bob(input){
+			Console.log("apples"); } ]
+
+Concatenating Arrays:
+	• Var list = ["tiger", "cat];
+	• Var newlist List.concat(["bee", "deer"])
+	• Pushes array elements together
+	
+
+Push Function:
+	• Pushes a value/array to the end of an array
+	• EX) var arr = [1,2,3];
+                  arr.push(4);
+                  // arr is now [1,2,3,4]
+
+Pop Function:
+	• Pops off the last entry of an array
+	• EX) 
+	var threeArr = [1, 4, 6];
+	var oneDown = threeArr.pop();
+	console.log(oneDown); // Returns 6
+	console.log(threeArr); // Returns [1, 4]
+
+Shift Function:
+	• Works exactly like Pop, but removes the first entry instead
+	• .shift();
+Unshift Function:
+	• .unshift();
+	• Works like the Push function, but adds to the front of the array
+	
+Queue:
+	• Works 
+	• A queue is an abstract Data Structure where items are kept in order
+	• New items can be added at the back, and old items are taken off from the front of the queue
+	
+
+Case Statements:
+	function caseInSwitch(val) {
+  var answer = "";
+  // Only change code below this line
+  switch (val){
+    case 1:
+      answer="alpha";
+      break;
+    case 2:
+      answer="beta";
+      break;
+    case 3:
+      answer="gamma";
+      break;
+    case 4:
+      answer="delta";
+      break;
+  }
+  // Only change code above this line  
+  return answer;  
+}
+// Change this value to test
+caseInSwitch(1);
+
+Java Script Objects:
+	• Objects are similar to arrays, except that instead of using indexes to access and modify their data, you access the data in objects through what are called properties.
+	• Objects are useful for storing data in a structured way, and can represent real world objects, like a cat.
+	• Ex) A Cat Object
+		var cat = {
+		  "name": "Whiskers",
+		  "legs": 4,
+		  "tails": 1,
+		  "enemies": ["Water", "Dogs"]
+		};
+	• There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
+	• Dot notation is what you use when you know the name of the property you're trying to access ahead of time.
+	• Deleting Object Parameters:
+		○ Delete object.property
+		○ This will delete the property from the object
+
+JSON:
+JavaScript Object Notation or JSONis a related data interchange format used to store data.
+	{
+	  "artist": "Daft Punk",
+	  "title": "Homework",
+	  "release_year": 1997,
+	  "formats": [ 
+	    "CD",
+	    "Cassette",
+	    "LP"
+	  ],
+	  "gold": true
+	}
+
+	
+JavaScript VAR vs LET:
+	• So unlike var, when using let, a variable with the same name can only be declared once.
+	• When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression.
+
+Java Script CONST Assignment:
+	• Const has all the awesome features that let has, with the added bonus that variables declared using const are read-only. 
+	• They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned.
+
+Commenting Code in Java Script:
+	• "//" to do a Line Comment
+	• "/*        */" To do a multi-line comment
+
+Adding a new Line in JavaScript Command Line:
+	• Press Shift
+
+
+JavaScript Logical Operators:
+	• &&
+		○ The AND Operator
+	• ||
+		○ The OR Operator
+	• !
+		○ The NOT Operator
+
+
+Common JavaScript Functions:
+	• Alert();
+		○ Will alert the user
+		○ Ex) Alert("ALERT ALERT ALERT");
+	• Number()
+		○ Converts a string into a number
+		○ Ex) Number("10");
+	• Prompt()
+		○ Prompt("Ask the user to enter something)
+		○ Will prompt user to enter something
+	
+
+JavaScript Conditionals:
+	• if
+		○ If (name === "Billy") {
+		Alert("Hi Billy");
+		}
+	• else
+		○ If (name === "Billy") {
+		Alert("Hi Billy");
+		}
+		Else {
+		Alert("Hi Stranger");
+		}
+	• else if
+		○ If (name === "Billy") {
+		Alert("Hi Billy");
+		}
+		Else if(name==="John"){
+		Alert("Hi John");
+		}
+	• Ternary Operator
+	• Switch
+		○ Switch(var){
+		Case 1:
+		Return "1";
+		Break;
+		Case 2:
+		Return "2";
+		Break;
+		}
+	• While Loop
+		var ourArray = [];
+		var i = 0;
+		while(i < 5) {
+		  ourArray.push(i);
+		  i++;
+		}
