@@ -1,0 +1,70 @@
+Basic HTML Infrastructure:
+<!DOCTYPE html> /*Tells the browser that we are using HTML5*/
+<html>
+  <head>
+        <title></title>
+  </head>
+	  <body>
+	  </body>
+</html>
+
+Main HTML Tags:
+	• Paragraph: <p> </p>
+	• Bold: <strong> </strong>
+	• Italicize: <em> </em>
+	• Ordered List: <ol> </ol>
+		○ Must include before you list the items
+	• Listed Items in the Ordered List: <li> </li> (Uses Numbering)
+	• Unlisted Items in the Ordered List: <ul> </ul>(uses dots)
+	• Line Break (         ): <br> 
+		○ Adds a line of blank space
+	• Horizontal Line Break (_________): <hr> 
+	• Image Tag: <img src="   "> (This tag is self-closing)
+	• Anchor Tag: <a href=" "> </a>
+	• Form Tag: <form> form elements </form>
+	• Divide Content Tag: <div> form/paragraph/etc </div>
+	• Span Tag (Inline Element): <span> </span>
+		○ We can add styles to a specific inline tag (One element in a form)
+
+Image Tag Specifications:
+	• Tag with source: <img src" " > 
+		○ Source is where the image is coming from
+	• Adding Width & Size: <img src " " width="x" height="x">
+	• Adding a description (alt): <img src="x" alt="description"
+		○ Alt is a description of the image
+		○ Good practice as it helps anyone with a disability view the website correctly
+		
+Relative vs Absolute Path:
+	• Relative Path: Uses the file protocol, so you can't access it away from computer
+		○ Example: file:///C:/Users/krstob/Desktop/HTML%20Files/index.html
+	• Absolute Path: Accessing the html file from Http, so everyone can view it across the globe
+		○ Example: https://www.sublimetext.com/3
+
+HTML vs HTML5:
+	• HTML5 doesn't affect older websites
+	• HTML5 adds support on all main browsers
+	• HTML5 features mobile browser support
+	• HTML5 adds Semantic Elements (descriptors)
+
+Form Tag Specifications:
+	• Form Tag: <form> Form Tag Stuff </form>
+	• Input Type: <input type = "text">
+	• Example: <form> <input type="text"> </form>
+	• To Submit a Form: <input type="submit" value="ButtonName(Register)">
+	• To reset a form: <input type="reset">
+	• To make a field required: <input type="text" required>
+	• Password Field: <input type="password" minlength="5">
+	• To make sure you input an email: <input type="email">
+	• Date Fields (birthdate): <input type="email">
+	• Button Input Types (Radio): <input type="radio">
+		○ 
+		○ The Name variable is so the radio buttons know of each other so the user can only select one button
+	• Button Input Checkbox: <input type="checkbox">
+		○ 
+	• Drop Down Menus: Select One Option
+		○ 
+	• Drop Down Menu: Select Multiple Options: <select multiple>
+
+Submitting a Form:
+	• First need to have each input have a name:
+
