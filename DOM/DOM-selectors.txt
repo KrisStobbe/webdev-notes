@@ -1,0 +1,59 @@
+What is the DOM?
+	• Document Object Model
+	• The browser creates DOM when it loads the HTML
+	• It looks like html, but it might look a little different 
+	• We need a way to change/add HTML elements, hence the DOM was created
+	• A way to use JS to interact and modify html/css
+	
+DOM Selectors:
+	• getElementsByTagName
+		○ Ex) document.getElementsByTagName("h1");
+		○ Will return the h1 tag and elements
+	• getElementsByClassName
+		○ Ex) document.getElementsByClassName("second");
+		○ Will return the element with class="second
+	• getElementById
+		○ Ex) document.getElementById("first");
+		○ Will return the element with id="first"
+		○ document.getElementById("first")[0]; will return the first element with that ID
+	• querySelector
+		○ Ex) document.querySelector("h1");
+		○ Will return <h1> Shopping List </h1>
+		○ It returns the first element it finds
+	• querySelectorAll
+		○ Ex) document.querySelectorAll("h1");
+		○ Returns all elements with that tag
+	• getAttribute
+		○ Ex) document.querySelector("li").getAttribute("random");
+			§ It will select li element and then return the attribute
+			§ You have to select an attribute before you can use get Get Attribute
+	• setAttribute
+		○ Ex) document.querySelector("li").setAttribute("1000");
+			§ Will change the random attribute to = 1000
+
+Changing Styles
+	• style.{property}  /*This is an okay way to do it, not the best */
+		○ Ex) document.querySelector("h1").style.background = "yellow";
+			§ Will change style of the element
+			§ Style has to be in a string
+	• className //best
+		○ Ex) document.querySelector("h1").className = "coolTitle";
+			§ Assigns the "coolTitle" class to the h1 element
+	• classList //best
+		○ document.querySelector("li").classList.classList.add("coolTitle");
+			§ Adds the Cool Title class to the first li element
+	• classList.add
+		○ document.querySelector("li").classList.classList.add("coolTitle");
+	• classList.remove
+		○ document.querySelector("li").classList.classList.remove("coolTitle");
+		○ Removes the coolTitle class from the li element
+	• classList.toggle
+		○ document.querySelector("li").classList.classList.toggle("coolTitle");
+		○ Toggles if the li element has it or not (on/off switch)
+		
+
+Bonus Selectors
+	• innerHTML //DANGEROUS
+	• parentElement
+	• children
+	• ##It is important to CACHE selectors in variables
